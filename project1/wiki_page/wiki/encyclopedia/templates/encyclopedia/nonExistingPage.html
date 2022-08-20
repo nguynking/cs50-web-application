@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ entryTitle }}
+{% endblock %}
+
+{% block body %}
+    <div>
+        <p>Unfortunately, there is no existing page!</p>
+        <p><a href="{% url 'newPage' %}">Click here</a> to create a new content!</p>
+    </div>
+
+{% endblock %}
